@@ -24,7 +24,37 @@ $ yarn add enzyme enzyme-adapter-react-16 jest -D
 $ yarn test
 ```
 
-可以看到控制台是没有测试结果输出的，为了结合 Enzyme 和自定义一些配置，我们需要生成一个 Jest 配置文件
+可以看到控制台是没有测试结果输出的
+
+我们先来个简单个例子测试下，新建一个名为 [example-test.js](examples\start-configs\example.test.js) 文件，然后添加代码
+
+```js
+function sum(a, b) {
+  return a + b;
+}
+
+test("sum function", () => {
+  expect(sum(1, 2)).toEqual(3);
+});
+```
+
+这时候再次运行下 `yarn test`，控制台应该会输出
+
+```bash
+PASS  example.test.js
+√ sum function (2ms)
+
+Test Suites: 1 passed, 1 total
+Tests:       1 passed, 1 total
+Snapshots:   0 total
+Time:        1.846s
+Ran all test suites.
+Done in 3.00s.
+```
+
+`passed` 代表我们测试通过了
+
+为了结合 Enzyme 和自定义一些配置，我们需要生成一个 Jest 配置文件
 
 ```bash
 yarn test --init
@@ -37,7 +67,5 @@ Jest 会根据你的回答帮助你生成配置文件，一般来说第一个选
 接下来我们需要配置下几个重要的属性
 
 ```json
-{
-  
-}
+{}
 ```
