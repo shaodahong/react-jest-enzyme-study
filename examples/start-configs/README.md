@@ -26,7 +26,7 @@ $ yarn test
 
 可以看到控制台是没有测试结果输出的
 
-我们先来个简单个例子测试下，新建一个名为 [example-test.js](examples\start-configs\example.test.js) 文件，然后添加代码
+我们先来个简单个例子测试下，新建一个名为 [example.test.js](examples\start-configs\example.test.js) 文件，然后添加代码
 
 ```js
 function sum(a, b) {
@@ -37,6 +37,8 @@ test("sum function", () => {
   expect(sum(1, 2)).toBe(3);
 });
 ```
+
+> Jest 默认会寻找 `__test__` 目录下文件或者 `/(spec|test)\.[jt]sx?$/` 匹配的文件作为测试文件
 
 这时候再次运行下 `yarn test`，控制台应该会输出
 
@@ -87,6 +89,8 @@ Received: 3
 
 可以很直观的看到我们期望的值是 `2`，但是实际上值是 `3`
 
+这个时候应该对 Jest 测试框架有大概的认识了
+
 为了结合 Enzyme 和自定义一些配置，我们需要生成一个 Jest 配置文件
 
 ```bash
@@ -97,8 +101,12 @@ Jest 会根据你的回答帮助你生成配置文件，一般来说第一个选
 
 完成后在项目的根目录应该看到了一个 `jest.config.js` 文件，打开它，发现全是英文，这时候先不要慌，打开谷歌翻译……
 
-接下来我们需要配置下几个重要的属性
+接下来我们需要配置下几个属性
 
 ```json
-{}
+{
+  // 匹配测试文件规则
+  // 统一风格，易识别
+  "testRegex": "\\.test\\.js$"
+}
 ```

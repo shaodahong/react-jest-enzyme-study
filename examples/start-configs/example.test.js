@@ -1,7 +1,5 @@
-function sum(a, b) {
-  return a + b;
-}
+import sum from './sum'
 
 test("sum function", () => {
-  expect(sum(1, 2)).toBe(2);
+  expect(sum(1, 2)).toBe(3);
 });
