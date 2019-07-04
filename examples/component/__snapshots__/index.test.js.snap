@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component test 1`] = `
+<div>
+  hello
+   world
+</div>
+`;

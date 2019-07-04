@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ComponentEvent test ComponentEvent test 1`] = `
+<div>
+  <button
+    onClick={[Function]}
+  />
+  <input
+    onChange={[Function]}
+    type="text"
+    value=""
+  />
+</div>
+`;

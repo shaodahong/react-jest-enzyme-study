@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ComponentProps test 1`] = `
+<div
+  className="hide"
+>
+  hide
+</div>
+`;
