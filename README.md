@@ -15,6 +15,9 @@
 
 ## 开始
 
-1. [初始化测试配置](examples/start-configs/README.md)
-2. [一个非常简单的例子](examples/easy-example/README.md)
-3. [如何测试组件](examples/component/README.md)
+- [初始化测试配置](examples/start-configs/README.md)
+- [如何测试组件](examples/component/README.md)
+- [测试组件-state](examples/component-state/README.md)
+- [测试组件-props](examples/component-props/README.md)
+- [测试组件-事件](examples/component-event/README.md)
+- [测试组件-高阶组件(HOC)](examples/component-hoc/README.md)
