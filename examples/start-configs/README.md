@@ -1,6 +1,8 @@
 ## 初始化测试配置
 
-[Jest](https://github.com/facebook/jest) 是 Facebook 出品的一个测试框架，开箱即用，交互反馈友好，[Enzyme](https://github.com/airbnb/enzyme) 是 Airbnb 出品的 React 测试库，先来安装依赖
+[Jest](https://github.com/facebook/jest) 是 Facebook 出品的一个测试框架，开箱即用，交互和反馈友好，[Enzyme](https://github.com/airbnb/enzyme) 是 Airbnb 出品的 React 测试库
+
+首先来安装依赖包
 
 ```bash
 $ yarn add enzyme enzyme-adapter-react-16 jest -D

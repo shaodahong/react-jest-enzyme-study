@@ -132,7 +132,7 @@ export default class Component extends React.Component {
 }
 ```
 
-把 `world` 换成 `monkey`，运行测试，可以清除的看到控制台报错了
+把 `world` 换成 `monkey`，运行测试，可以清楚的看到控制台报错了
 
 ```bash
   ● Component test
