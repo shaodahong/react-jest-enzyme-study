@@ -21,9 +21,9 @@ Enzyme 给我们提供三种渲染组件的方式, `shallow` `mount` 和 `render
 
 `mount` 称为**完整渲染**，需要真实的 dom 环境，它使用 [jsdom](https://github.com/jsdom/jsdom) 模拟浏览器环境对组件进行完整的渲染，包括子组件，常用于测试高阶组件
 
-`render` 称为**静态渲染**，使用虚拟 dom 生成 HTML 结构，包括子组件，并且它使用的是第三方 [Cheerio](http://cheeriojs.github.io/cheerio/) 的解析库，`Cheerio` 库用 node 的应该很熟悉，它还有个名字叫做 node 版本的 Jquery
+`render` 称为**静态渲染**，使用虚拟 dom 生成 HTML 结构，包括子组件，并且它使用的是第三方 [Cheerio](http://cheeriojs.github.io/cheerio/) 的解析库，`Cheerio` 库写过 node 的应该很熟悉，它还有个别名叫做 node 版本的 jQuery
 
-`shallow` `mount` 和 `render` 渲染组件后会返回一个包装器，如果你会 Jquery，那么恭喜，你已经掌握了 Enzyme
+`shallow` `mount` 和 `render` 渲染组件后会返回一个包装器，如果你会 jQuery，那么恭喜，你已经掌握了 Enzyme
 
 我们开始编写测试用例：
 
@@ -43,13 +43,13 @@ it('Component test', () => {
 
 `Enzyme` 使用也很简单，引入后配置 `Adapter`，Adapter 是干什么的？Adapter 是适配器的意思，适配你的 React 版本，不同的版本需要不同的 Adapter，查看自己的 React 版本然后安装相应的 Adapter 版本后配置即可
 
-然后控制台运行 `yarn jest -t 'Component test'`，可以看到测试通过，`-t` 可以运行单个测试用例，匹配的是 `it` 的第一个参数，`it` 是 `test` 的别名
+然后控制台运行 `yarn jest`，可以看到测试通过
 
-但是问题来了，这样测试效率太低，测试本身是服务代码质量，如果花费大量的时间进行低效的测试用例编写，会非常的枯燥，所以我们要简化配置，使用统一解决方案-快照
+但是问题来了，这样测试效率太低，测试本身是服务代码质量，如果花费大量的时间进行低效的测试用例编写，会非常的枯燥，所以我们要简化配置，使用统一解决方案-**快照**
 
 ### 简化配置
 
-本着配置一次，全程无关的理念，我们在项目根目录新建一个 `test` 文件夹，在 `test` 文件夹中新建名为 `setup.js` 的文件
+为了方便全局使用，我们在项目根目录新建一个 `test` 文件夹，在 `test` 文件夹中新建名为 `setup.js` 的文件
 
 ```js
 import Enzyme from 'enzyme';

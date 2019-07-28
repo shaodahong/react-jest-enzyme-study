@@ -6,3 +6,10 @@ exports[`Component test 1`] = `
    world
 </div>
 `;
+
+exports[`Componentddd test 1`] = `
+<div>
+  hello
+   monkey
+</div>
+`;
