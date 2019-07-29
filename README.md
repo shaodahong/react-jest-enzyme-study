@@ -17,7 +17,5 @@
 
 - [初始化测试配置](examples/start-configs/README.md)
 - [如何测试组件](examples/component/README.md)
-- [测试组件-state](examples/component-state/README.md)
-- [测试组件-props](examples/component-props/README.md)
-- [测试组件-事件](examples/component-event/README.md)
+- [测试组件-状态](examples/component-status/README.md)
 - [测试组件-高阶组件(HOC)](examples/component-hoc/README.md)

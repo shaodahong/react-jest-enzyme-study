@@ -3,13 +3,6 @@
 exports[`Component test 1`] = `
 <div>
   hello
-   world
-</div>
-`;
-
-exports[`Componentddd test 1`] = `
-<div>
-  hello
    monkey
 </div>
 `;

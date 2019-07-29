@@ -2,6 +2,7 @@
 
 exports[`ComponentHoc test ComponentHoc test 1`] = `
 <div>
-  hello world
+  hello world 
+  hoc
 </div>
 `;
